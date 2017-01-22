@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+#canvas {
+    float: left;
+    width: 700px;
+    height: 500px;
+    border: 1px solid #ddd;
+    background: url('../images/map.jpg') no-repeat center;
+    background-size: 2000px;
+    background-position: -1270px -600px;
+}
+
+#output {
+    float: left;
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#output label,
+#output input {
+    display: block;
+}
+
+#output input {
+    padding: 7px 10px;
+    font-size: 16px;
+    color: #dd4e26;
+    margin: 5px 0 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}

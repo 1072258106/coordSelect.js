@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="canvas"></div>
+        <div id="output">
+            <label for="selection_tl">Top Left:</label>
+            <input type="text" id="selection_tl">
+            <label for="selection_br">Bottom Right:</label>
+            <input type="text" id="selection_br">
+            <label for="selection_width">Width:</label>
+            <input type="text" id="selection_width">
+            <label for="selection_height">Height:</label>
+            <input type="text" id="selection_height">
+        </div>
+
+    <script src="coordSelect.js"></script>
+    <script>
+        coordSelect.create('#canvas', {
+            selectTL: 'selection_tl',
+            selectBR: 'selection_br',
+            selectWidth: 'selection_width',
+            selectHeight: 'selection_height'
+        });
+    </script>
+    </body>
+</html>
